@@ -6,11 +6,23 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:50:16 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/21 14:49:57 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 18:50:05 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
+
+void	free_list(t_stack **head_a)
+{
+	t_stack	*tmp;
+
+	tmp = *head_a;
+	while (tmp != NULL)
+	{
+		free(tmp);
+		tmp = tmp->next;
+	}
+}
 
 void	ft_put_in_list(t_stack **stack, char **arr)
 {
@@ -27,7 +39,7 @@ void	ft_put_in_list(t_stack **stack, char **arr)
 		{
 			free_list(stack);
 			ft_free2(arr);
-			write(2, "Error\n", 6);
+			write(1, "Error\n", 6);
 			exit(0);
 		}
 		add_back(stack, nbr);
