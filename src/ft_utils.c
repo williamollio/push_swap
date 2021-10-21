@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:50:16 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/15 14:18:59 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 14:49:57 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,15 @@ void	ft_put_in_list(t_stack **stack, char **arr)
 		if (nbr > INT32_MAX || nbr < INT32_MIN
 			|| (nbr == 0 && ft_strncmp(arr[i], "0", 1)))
 		{
+			free_list(stack);
+			ft_free2(arr);
 			write(2, "Error\n", 6);
 			exit(0);
 		}
 		add_back(stack, nbr);
 		i++;
 	}
+	ft_free2(arr);
 }
 
 void	ft_print(char *s, char c)

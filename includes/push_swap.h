@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 13:28:38 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/13 18:27:06 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 14:31:38 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,19 +73,11 @@ void	ft_put_in_list(t_stack **stack, char **arr);
 
 /* Print the name of the operation done */
 void	ft_print(char *s, char c);
+/* Free the list */
+void	free_list(t_stack **head_a);
 
 /** Tools to deal with linked list **/
 
-/* Print a linked list and his reference */
-void	ft_print_stack(t_stack **stack, char c);
-/* Print the data of a linked list */
-void	print_list(t_stack *n);
-/* Print the indexes of a linked list */
-void	print_list_index(t_stack *n);
-/* Print the markups of a linked list */
-void	print_list_markup(t_stack *n);
-/* Print the flags of a linked list */
-void	printf_list_flag(t_stack *n);
 /* Add a new node at the beginning of the linked list */
 void	add_front(t_stack **head, int new_data);
 /* Add a new node after a node in the linked list*/

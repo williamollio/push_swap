@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 13:04:15 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/13 17:34:27 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 14:34:08 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,6 @@ char	**ft_parse_input(int argc, char *argv[], t_parse *parse)
 		parse->i++;
 	}
 	parse->arr = ft_split(parse->str, '_');
+	ft_free1(parse->str);
 	return (parse->arr);
 }

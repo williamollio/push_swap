@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 10:09:12 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/12 17:14:16 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 14:22:12 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	push_a_to_b(t_stack **head_a, t_stack **head_b, int length)
 
 	arr = ft_array_sorted(*head_a, length);
 	ft_insert_index(head_a, arr, length);
+	free(arr);
 	len0 = ft_markup(*head_a, &index_head0);
 	len1 = ft_markup_index(*head_a, &index_head1);
 	if (len0 > len1)

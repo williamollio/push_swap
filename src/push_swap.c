@@ -6,11 +6,23 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 16:49:32 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/15 14:18:53 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/21 14:51:15 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
+
+void	free_list(t_stack **head_a)
+{
+	t_stack	*tmp;
+
+	tmp = *head_a;
+	while (tmp != NULL)
+	{
+		free(tmp);
+		tmp = tmp->next;
+	}
+}
 
 int	main(int argc, char *argv[])
 {
@@ -29,5 +41,6 @@ int	main(int argc, char *argv[])
 		return (0);
 	}
 	ft_sorting(&stack_a, &stack_b);
+	free_list(&stack_a);
 	return (0);
 }
