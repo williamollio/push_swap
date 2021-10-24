@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_error2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wollio <williamollio@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 17:20:49 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/13 18:34:34 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/24 13:51:46 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	if_sorted2(t_stack **head_a)
 int	if_one2(t_stack **head_a)
 {
 	if (length_list(*head_a) == 1)
-		return (1);
+		exit(0);
 	return (0);
 }
 

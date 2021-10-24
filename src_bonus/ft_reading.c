@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_reading.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wollio <williamollio@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 10:29:47 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/21 18:56:30 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/24 13:27:51 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_apply(t_stack **head_a, t_stack **head_b, char *buffer)
 	i = 0;
 	arr = ft_split(buffer, '\n');
 	ft_free1(buffer);
-	while (arr[i] != '\0')
+	while (arr[i] != 0)
 	{
 		if (ft_strlen(arr[i]) == 2)
 			read_two(head_a, head_b, arr, i);

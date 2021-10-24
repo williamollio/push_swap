@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_error.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wollio <williamollio@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 21:12:58 by wollio            #+#    #+#             */
-/*   Updated: 2021/10/21 14:40:35 by wollio           ###   ########.fr       */
+/*   Updated: 2021/10/24 13:28:09 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_error(int argc, char *argv[])
 {
 	if (argc == 1)
 		exit(0);
-	else if (argc == 2 && argv == '\0')
+	else if (argc == 2 && argv == (void *)0)
 	{
 		write(2, "Error\n", 6);
 		exit(0);
