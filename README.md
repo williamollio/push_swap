@@ -13,9 +13,6 @@ The grade depends only on the number of operations that our program display to s
 
 [Subject PDF](https://github.com/williamollio/push_swap/tree/master/subject)
 
-# Grade
-[![wollio's 42Project Score](https://badge42.herokuapp.com/api/project/wollio/push_swap)](https://github.com/williamollio/badge42)
-
 # Clone
 Open a terminal and run following command:
 ```
