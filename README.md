@@ -11,7 +11,7 @@ Your goal ? Write a program in C called push_swap which calculates and displays 
 
 The grade depends only on the number of operations that our program display to sort the inputs.
 
-Subject PDF : https://github.com/williamollio/push_swap/tree/master/subject
+[Subject PDF](https://github.com/williamollio/push_swap/tree/master/subject)
 
 # Grade
 [![wollio's 42Project Score](https://badge42.herokuapp.com/api/project/wollio/push_swap)](https://github.com/williamollio/badge42)
